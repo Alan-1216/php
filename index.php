@@ -1,4 +1,6 @@
 <?php
-echo "<strong>Olá Mundo 123</php>";
-echo "Olá Udemy";
+
+echo "<strong>Olá Mundo!</php>";
+echo "Olá Alan";
+
 ?>
