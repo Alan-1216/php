@@ -1,6 +1,7 @@
 <?php
 
 require_once("config.php");
+
 //Carrega Apenas um usuario em especifico 
 //$root = new Usuario();
 //$root->loadById(4);
@@ -15,9 +16,23 @@ require_once("config.php");
 //echo json_encode($search);
 
 //Carregar um Usuario usando o Login e a senha
+//$usuario = new Usuario();
+//$usuario ->login("Alan","123456");
+//echo $usuario;
+
+//Criando um Novo usuario com o Insert
+//$aluno = new Usuario("aluno", "@lun0");
+//$aluno->insert();
+//echo $aluno;
+
+//
 $usuario = new Usuario();
-$usuario ->login("Alan","123456");
+
+$usuario->loadById(11);
+
+$usuario->update("professor", "zooom");
 
 echo $usuario;
+
 
 ?>
